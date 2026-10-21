@@ -104,7 +104,7 @@ p {
   gap: 4em;
 }
 
-.sheepy {
+.pixelsheepy {
   padding: 0;
   margin: 0;
   width: 28em;
@@ -232,14 +232,14 @@ footer {
 
   .introduction {
     flex-flow: column wrap;
-    gap: 1em;
+    gap: 0;
   }
 
   * {
     text-align: center;
   }
 
-  .sheepy {
+  .pixelsheepy {
     width: 18em;
   }
 }
