@@ -1,14 +1,16 @@
 /* --- Fonts --- */
 
 @font-face {
-  font-family: 'Inter Tight';
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
+  font-display: swap;
   src: url('../assets/fonts/InterTightMedium.woff2') format('woff2'),
 }
 
 @font-face {
-  font-family: 'Inter Tight';
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 900;
+  font-display: swap;
   src: url('../assets/fonts/InterTightBlack.woff2') format('woff2'),
 }
 
@@ -40,12 +42,12 @@ h3 {
 
 /* --- Header --- */
 
-header h2::selection {
+header .headertext::selection {
   color: var(--white);
   background: var(--pink);
 }
 
-header h2 a::selection {
+header .headertext a::selection {
   color: var(--white);
   background: var(--pink);
 }
@@ -66,6 +68,16 @@ header {
 
 header a {
   color: inherit;
+}
+
+.headertext {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 900;
 }
 
 /* --- Spans --- */
