@@ -1,0 +1,264 @@
+/* --- Fonts --- */
+
+@font-face {
+  font-family: 'Inter Tight';
+  font-weight: 500;
+  src: url('../assets/fonts/InterTightMedium.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  font-weight: 900;
+  src: url('../assets/fonts/InterTightBlack.woff2') format('woff2'),
+}
+
+/* --- Root Consts --- */
+
+:root {
+  --white: #ffffff;
+  --black: #1f1f1f;
+  --pink: #f46a9e;
+  --lightpink: #f9b4ce;
+}
+
+/* --- Selection (Text Highlight) --- */
+
+::selection {
+  color: var(--pink);
+  background: var(--white);
+}
+
+/* --- Headings --- */
+
+h1, h2 {
+  font-weight: 900;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/* --- Header --- */
+
+header h2::selection {
+  color: var(--white);
+  background: var(--pink);
+}
+
+header h2 a::selection {
+  color: var(--white);
+  background: var(--pink);
+}
+
+header {
+  background-color: var(--white);
+  color: var(--pink);
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  z-index: 100;
+}
+
+header a {
+  color: inherit;
+}
+
+/* --- Spans --- */
+
+.lighter {
+  color: var(--lightpink);
+}
+
+.black {
+  color: var(--black);
+}
+
+/* --- Paragraph --- */
+
+p {
+  line-height: 1.5;
+}
+
+/* --- Hero Wrapper (Sheepy, Introduction & Links) --- */
+
+.hero-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 25px 0;
+  margin: 0;
+  gap: 4em;
+}
+
+.introduction {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+}
+
+.sheepy {
+  padding: 0;
+  margin: 0;
+  width: 28em;
+  animation: float 6s ease-in-out infinite, turn 8s ease-in-out infinite;
+}
+
+/* --- Badges --- */
+
+.badges {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  image-rendering: pixelated;
+}
+
+.badges-grid a {
+  transition: transform 0.2s ease;
+}
+
+.badges-grid a:hover {
+  transform: scale(1.15);
+}
+
+/* --- Body --- */
+
+body {
+  margin: 0;
+  padding: 0 10%;
+  background-color: var(--pink);
+  color: var(--white);
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+  overflow-x: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Lists --- */
+
+ul {
+  list-style: none;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+ul a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5em 0.5em;
+  margin: 0 -0.5em;
+  color: var(--white);
+  text-decoration: none;
+  overflow: hidden;
+  gap: 0.4rem;
+  transition: color 0.3s ease;
+}
+
+ul a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--white);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+ul a:hover {
+  color: var(--pink);
+}
+
+ul a:hover::before {
+  transform: scaleY(1);
+}
+
+li {
+  text-decoration: none;
+}
+
+/* --- Footer --- */
+
+footer {
+  display: flex;
+  width: 100%;
+  color: var(--lightpink);
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Keyframes --- */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+@keyframes turn {
+  0%, 100% { rotate: -2deg; }
+  50%      { rotate: 2deg; }
+}
+
+/* --- Media Queries --- */
+
+@media screen and (max-width: 1151px) {
+  .hero-wrapper {
+    padding-top: 2em;
+    gap: 0;
+  }
+
+  .introduction {
+    flex-flow: column wrap;
+    gap: 1em;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .sheepy {
+    width: 18em;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    height: 0;
+    visibility: hidden;
+  }
+
+  .hero-wrapper {
+    justify-content: flex-start;
+  }
+
+  ul {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: .9rem;
+  }
+}
