@@ -3,14 +3,14 @@
 @font-face {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  font-display: swap;
+  font-display: fallback;
   src: url('../assets/fonts/InterTightMedium.woff2') format('woff2'),
 }
 
 @font-face {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 900;
-  font-display: swap;
+  font-display: fallback;
   src: url('../assets/fonts/InterTightBlack.woff2') format('woff2'),
 }
 
