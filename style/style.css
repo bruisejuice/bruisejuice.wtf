@@ -71,18 +71,6 @@
   color: var(--text-clr);
 }
 
-#theme-switch i:last-child {
-  display: none;
-}
-
-.darkmode #theme-switch i:first-child {
-  display: none;
-} 
-
-.darkmode #theme-switch i:last-child {
-  display: block;
-} 
-
 /* --- Selection (Text Highlight) --- */
 
 ::selection {
@@ -571,8 +559,12 @@ footer {
   }
 
   .scroller[data-animated="true"] {
-  overflow: visible;
-  -webkit-mask: none;
-  mask: none;
-}
+    overflow: visible;
+    -webkit-mask: none;
+    mask: none;
+  }
+
+  .scroller[data-animated="true"] .scroller__inner:hover {
+    animation-play-state: running;
+  }
 }
