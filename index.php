@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- bruisejuice.wtf v0.4 -->
+<!-- bruisejuice.wtf v0.4.1 -->
 <html lang="en" prefix="og: https://ogp.me/ns#">
 
 <head>
