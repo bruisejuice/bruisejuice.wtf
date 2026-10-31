@@ -1,206 +1,331 @@
 <!doctype html>
-<!-- bruisejuice.wtf v0.3.3 -->
+<!-- bruisejuice.wtf v0.4 -->
 <html lang="en" prefix="og: https://ogp.me/ns#">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      viewport-fit="cover" />
-    <title>bruisejuice</title>
 
-    <!-- Meta -->
-    <meta name="theme-color" content="#F46A9E" />
-    <meta
-      name="description"
-      content="hi, my name is bruisejuice. some call me sheepy. 
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+    viewport-fit="cover" />
+  <title>bruisejuice</title>
+
+  <!-- Meta -->
+  <meta name="theme-color" content="#F46A9E" />
+  <meta
+    name="description"
+    content="my name is bruisejuice (aka sheepy). 
       i'm a 28 y/o indie electronic music producer. 
       thanks for stopping by and having a listen. 
       take care and keep being creative!" />
 
-    <meta property="og:url" content="https://bruisejuice.wtf/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="bruisejuice.wtf" />
-    <meta property="og:title" content="bruisejuice &#10022;" />
-    <meta property="og:description" content="sheep on the internet" />
-    <meta
-      property="og:image"
-      content="https://bruisejuice.wtf/assets/img/thumbnail.png" />
+  <meta property="og:url" content="https://bruisejuice.wtf/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="bruisejuice.wtf" />
+  <meta property="og:title" content="bruisejuice &#10022;" />
+  <meta property="og:description" content="sheep on the internet" />
+  <meta
+    property="og:image"
+    content="https://bruisejuice.wtf/assets/img/thumbnail.png" />
 
-    <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:card" content="summary_large_image" />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/fontawesome/css/brands.css" />
-    <link rel="stylesheet" href="assets/fontawesome/css/solid.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/brands.css" />
+  <link rel="stylesheet" href="assets/fontawesome/css/solid.css" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/favicon/favicon-96x96.png"
-      sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="bruisejuice" />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-  </head>
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="/assets/favicon/favicon-96x96.png"
+    sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="bruisejuice" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+</head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="headertext">
-        <span class="black">
-          &#10022;&nbsp;
-          <a href="https://youtu.be/qZ0QNM7sIcU" target="_blank"
-            >"some. auditory. thoughts." is OUT NOW!</a
-          >
-          &nbsp;&#10022;
-        </span>
-      </div>
-    </header>
+<body>
+  <button id="theme-switch" title="switch contrast mode">
+    <i class="fa-solid fa-moon"></i>
+    <i class="fa-solid fa-sun"></i>
+  </button>
 
-    <!-- Main -->
-    <main>
-      <!-- Hero Wrapper -->
-      <div class="hero-wrapper">
-        <!-- Introduction -->
-        <div class="introduction">
-          <!-- Image -->
-          <img
-            src="assets/img/pixelsheepy.png"
-            class="pixelsheepy"
-            width="500px"
-            height="auto"
-            fetchpriority=high
-            title="woah, that's me!" />
-          <!-- Title, Bio & Links -->
-          <section class="hero-links">
-            <h1>bruisejuice<span class="lighter">.wtf</span></h1>
+  <!-- Header -->
+  <header>
+    <div class="headertext">
+      <span class="black">
+        &#10022;&nbsp;
+        <a href="https://youtu.be/qZ0QNM7sIcU" target="_blank">"some. auditory. thoughts." is OUT NOW!</a>
+        &nbsp;&#10022;
+      </span>
+    </div>
+  </header>
 
-            <p>
-              hi, my name is bruisejuice. some call me sheepy.<br />
-              i'm a 28 y/o indie electronic music producer.<br />
-              thanks for stopping by and having a listen.<br />
-              take care and keep being creative!
-            </p>
+  <nav>
+    <img src="assets/img/bruisejuice_logo_black.png" height="80px" alt="" class="logo" draggable="false">
+  </nav>
 
-            <ul class="links">
-              <li>
-                <a
-                  href="https://www.youtube.com/@bruisejuice"
-                  target="_blank"
-                  title="subscribe and listen on youtube!">
-                  youtube
-                  <i class="fa-brands fa-youtube" alt="youtube icon"></i>
-                  <span class="lighter">@bruisejuice</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://bruisejuice.bandcamp.com/"
-                  target="_blank"
-                  title="support on bandcamp!">
-                  bandcamp
-                  <i class="fa-brands fa-bandcamp" alt="bandcamp icon"></i>
-                  <span class="lighter">bruisejuice</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://bsky.app/profile/bruisejuice.wtf"
-                  target="_blank"
-                  title="follow on bluesky!">
-                  bluesky
-                  <i class="fa-brands fa-bluesky" alt="bluesky icon"></i>
-                  <span class="lighter">@bruisejuice.wtf</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:hello@bruisejuice.wtf"
-                  title="send me cat pics!">
-                  contact
-                  <i class="fa-solid fa-envelope" alt="envelope icon"></i>
-                  <span class="lighter">hello@bruisejuice.wtf</span>
-                </a>
-              </li>
-            </ul>
-          </section>
+  <!-- Main -->
+  <main>
+    <!-- Hero Wrapper -->
+    <section class="hero-wrapper">
+      <!-- Introduction -->
+      <div class="introduction">
+        <!-- Image -->
+        <div class="sheepy-container">
+          <div id="boopImage">
+            <img
+              src="assets/img/pixelsheepy.png"
+              class="pixelsheepy"
+              height="280px"
+              width="460px"
+              fetchpriority=high
+              draggable="false"
+              title="woah, that's me!" />
+          </div>
+          <p class="lighter" id="booptext">sheepy got booped <span id="boopCount">x</span> times! <i class="fa-solid fa-hand"></i></p>
         </div>
+        <!-- Title, Bio & Links -->
+        <div class="hero-links">
+          <!--img src="assets/img/bruisejuice_logo_white.png" height="80px" alt=""-->
+          <h1 class="welcome"><span class="lighter">oh, </span>hey there! &#10022;</h1>
 
-        <!-- Badges -->
-        <div class="badges">
-          <h3>&#10022;&nbsp;cool inhabitants of planet earth &#10022;&nbsp;</h3>
+          <p class="bio">
+            my name is bruisejuice (aka sheepy).<br />
+            i'm a 28 y/o indie electronic music producer.<br />
+            thanks for stopping by and having a listen.<br />
+            take care and keep being creative!
+          </p>
 
-          <div class="badges-grid">
-            <a href="https://bruisejuice.wtf" target="_blank">
-              <img
-                src="assets/img/badges/bruisejuice.gif"
-                alt="88x31bruisejuice"
-                width="88px"
-                height="31px"
-                title="that's me...i'm cool too!" />
-            </a>
-            <a href="https://wangleline.com/" target="_blank">
-              <img
-                src="assets/img/badges/wangleline.png"
-                alt="88x31wangleline"
-                width="88px"
-                height="31px"
-                title="mother bunny of sound design" />
-            </a>
-            <a href="https://rabbitears.wangleline.com/" target="_blank">
-              <img
-                src="assets/img/badges/rabbitears.gif"
-                alt="88x31rabbitears"
-                width="88px"
-                height="31px"
-                title="sample everything from youtube" />
-            </a>
-            <a href="https://chocographix.net/" target="_blank">
-              <img
-                src="assets/img/badges/chocographix.png"
-                alt="88x31chocographix"
-                width="88px"
-                height="31px"
-                title="the shape engineer" />
-            </a>
-            <a href="https://blog.otterzweb.xyz/" target="_blank">
-              <img
-                src="assets/img/badges/otterzweb.png"
-                alt="88x31otterzweb"
-                width="88px"
-                height="31px"
-                title="news from the otterverse" />
-            </a>
-            <a href="https://teeth.garden/" target="_blank">
-              <img
-                src="assets/img/badges/t4teeth.avif"
-                alt="88x31teeth"
-                width="88px"
-                height="31px"
-                title="teeth" />
-            </a>
+          <ul class="links">
+            <li class="link-youtube">
+              <a
+                href="https://www.youtube.com/@bruisejuice"
+                target="_blank"
+                title="subscribe and listen on youtube!">
+                youtube
+                <i class="fa-brands fa-youtube" alt="youtube icon"></i>
+                <span class="lighter">@bruisejuice</span>
+              </a>
+            </li>
+            <li class="link-bandcamp">
+              <a
+                href="https://bruisejuice.bandcamp.com/"
+                target="_blank"
+                title="support on bandcamp!">
+                bandcamp
+                <i class="fa-brands fa-bandcamp" alt="bandcamp icon"></i>
+                <span class="lighter">bruisejuice</span>
+              </a>
+            </li>
+            <li class="link-bsky">
+              <a
+                href="https://bsky.app/profile/bruisejuice.wtf"
+                target="_blank"
+                title="follow on bluesky!">
+                bluesky
+                <i class="fa-brands fa-bluesky" alt="bluesky icon"></i>
+                <span class="lighter">@bruisejuice.wtf</span>
+              </a>
+            </li>
+            <li class="link-contact">
+              <a
+                href="mailto:hello@bruisejuice.wtf"
+                title="send me cat pics!">
+                contact
+                <i class="fa-solid fa-envelope" alt="envelope icon"></i>
+                <span class="lighter">hello@bruisejuice.wtf</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <section class="art-gallery">
+      <h2>your art, for me <i class="fa-solid fa-heart"></i></h2>
+
+      <div class="scroller">
+        <div class="img-list scroller__inner">
+          <div class="img-box">
+            <img src="assets/img/gallery/refsheet.png" alt="" height="250px" draggable="false">
+            <div class="img-desc">refsheet by <a href="https://linktr.ee/nblankart" class="white" target="_blank">Nblank</a></div>
+          </div>
+          <div class="img-box">
+            <img src="assets/img/gallery/satcover.png" alt="" height="250px" draggable="false">
+            <div class="img-desc">album cover by <a href="https://linktr.ee/nblankart" class="white" target="_blank">Nblank</a></div>
+          </div>
+          <div class="img-box">
+            <img src="assets/img/gallery/sheepyhalfbody.png" alt="" height="250px" draggable="false">
+            <div class="img-desc">halfbody by <a href="https://linktr.ee/nblankart" class="white" target="_blank">Nblank</a></div>
+          </div>
+          <div class="img-box">
+            <img src="assets/img/gallery/sheepyteal.png" alt="" height="250px" draggable="false">
+            <div class="img-desc">icon by <a href="https://tealart.work/" class="white" target="_blank">Teal</a></div>
+          </div>
+          <div class="img-box">
+            <img src="assets/img/gallery/sheepyuwu.png" alt="" height="250px" draggable="false">
+            <div class="img-desc">icon by NoodleBoxDragon</div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-      <span class="lighter"
-        >artwork by
-        <a href="https://linktr.ee/nblankart" class="lighter" target="_blank"
-          >Nblank</a
-        >
-        &#10022; bruisejuice &#10022; 2026
-      </span>
-    </footer>
-  </body>
+    <!-- Badges -->
+    <section class="badges">
+      <h3>&#10022;&nbsp;cool things on planet earth &#10022;&nbsp;</h3>
+
+      <div class="badges-grid">
+        <a href="https://bruisejuice.wtf" target="_blank">
+          <img
+            src="assets/img/badges/bruisejuice.gif"
+            alt="88x31bruisejuice"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="that's me...i'm cool too!" />
+        </a>
+        <a href="https://wangleline.com/" target="_blank">
+          <img
+            src="assets/img/badges/wangleline.png"
+            alt="88x31wangleline"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="mother bunny of sound design" />
+        </a>
+        <a href="https://rabbitears.wangleline.com/" target="_blank">
+          <img
+            src="assets/img/badges/rabbitears.gif"
+            alt="88x31rabbitears"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="sample everything from youtube" />
+        </a>
+        <a href="https://chocographix.net/" target="_blank">
+          <img
+            src="assets/img/badges/chocographix.png"
+            alt="88x31chocographix"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="the shape engineer" />
+        </a>
+        <a href="https://blog.otterzweb.xyz/" target="_blank">
+          <img
+            src="assets/img/badges/otterzweb.png"
+            alt="88x31otterzweb"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="news from the otterverse" />
+        </a>
+        <a href="https://teeth.garden/" target="_blank">
+          <img
+            src="assets/img/badges/t4teeth.avif"
+            alt="88x31teeth"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="teeth" />
+        </a>
+        <a href="https://www.aseprite.org/" target="_blank">
+          <img
+            src="assets/img/badges/aseprite.png"
+            alt="88x31aseprite"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="favorite pixel art software" />
+        </a>
+        <a>
+          <img
+            src="assets/img/badges/prideprogress.png"
+            alt="88x31pride"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="made with pride" />
+        </a>
+        <a>
+          <img
+            src="assets/img/badges/enby.jpg"
+            alt="88x31enby"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="he/they" />
+        </a>
+        <a>
+          <img
+            src="assets/img/badges/genderfluid.png"
+            alt="88x31genderfluid"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="running on genderfluid!" />
+        </a>
+        <a href="https://steamcommunity.com/id/bruisejuice/" target="_blank">
+          <img
+            src="assets/img/badges/steam.gif"
+            alt="88x31steam"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="friend me on steam!" />
+        </a>
+        <a href="https://vscodium.com/" target="_blank">
+          <img
+            src="assets/img/badges/vscodium.gif"
+            alt="88x31vscodium"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="made with vs codium" />
+        </a>
+        <a href="https://www.firefox.com/" target="_blank">
+          <img
+            src="assets/img/badges/firefox.png"
+            alt="88x31firefox"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="favorite browser" />
+        </a>
+        <a href="https://ublockorigin.com/" target="_blank">
+          <img
+            src="assets/img/badges/ublock.png"
+            alt="88x31vscodium"
+            width="88px"
+            height="31px"
+            draggable="false"
+            title="block them ads!" />
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/trail.js"></script>
+  <script src="scripts/boop.js"></script>
+  <script src="scripts/darkmode.js"></script>
+
+  <!-- Footer -->
+  <footer>
+    <span class="lighter">logo by
+      <a href="https://chocographix.net/" class="lighter" target="_blank">choco</a>
+      &#10022; bruisejuice &#10022; 2026
+    </span>
+  </footer>
+</body>
+
 </html>
