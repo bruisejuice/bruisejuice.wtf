@@ -233,6 +233,7 @@ p {
   opacity: 0;
   padding: 0;
   margin: 0;
+  user-select: none;
   animation: appearY .5s ease-in-out 3s forwards, float 6s ease-in-out infinite, turn 8s ease-in-out infinite;
 }
 
