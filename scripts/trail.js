@@ -165,6 +165,7 @@ function createDiv(height, width) {
     div.style.width = width + "px";
     div.style.overflow = "hidden";
     div.style.pointerEvents = "none";
+    div.classList.add('trail');
 
     return div;
 }

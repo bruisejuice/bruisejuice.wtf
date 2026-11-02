@@ -267,6 +267,10 @@ p {
   animation: appearY .5s ease-in-out 3.1s forwards;
 }
 
+.trail {
+  overflow: hidden;
+}
+
 .link-youtube {
   opacity: 0;
   animation: appearY .5s ease-in-out 3.2s forwards;
